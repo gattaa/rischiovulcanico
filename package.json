@@ -1,0 +1,29 @@
+{
+  "name": "rischiovulcanico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "sass src/index.scss dist/assets/css/index.css",
+    "deploy": "purgecss --css dist/assets/css/primer.css --content dist/*.html --output dist/assets/css/index.css &&  echo rischiovulcanico.froggit.dev >> ./dist/CNAME && gh-pages -d ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gattaa/rischiovulcanico.git"
+  },
+  "author": "froggit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gattaa/rischiovulcanico/issues"
+  },
+  "homepage": "https://github.com/gattaa/rischiovulcanico#readme",
+  "dependencies": {
+    "@primer/css": "^16.3.0",
+    "@primer/octicons": "^13.0.0",
+    "@primer/primitives": "^4.3.0",
+    "gh-pages": "^3.1.0",
+    "purgecss": "^4.0.3",
+    "sass": "^1.32.12"
+  }
+}
